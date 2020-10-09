@@ -1,5 +1,5 @@
 # altwalker-petclinic-example
-AltWalker PetClinic example
+AltWalker model-based testing example, implemented in Python, using the demo PetClinic site as target.
 
 ## Intro
 
