@@ -10,7 +10,7 @@ The models are a bit described in [GraphWalker docs](https://github.com/GraphWal
 
 ## Pre-requisites
 
-- python3
+- Python3
 - Firefox (or other browser)
 - PetClinic
 
@@ -18,6 +18,14 @@ Install the python dependencies:
 
 ```pip install -r requirements.txt```
 
+Start the PetClinic demo app.
+
+```
+# git clone https://github.com/SpringSource/spring-petclinic.git
+cd spring-petclinic
+# git reset --hard 482eeb1c217789b5d772f5c15c3ab7aa89caf279
+mvn tomcat7:run
+```
 
 ## Running
 
@@ -40,7 +48,7 @@ I also made some common vertices available in a BaseModel, that other models wil
 
 ## Credits
 
-Credits go to GraphWalker team and the team behind the PetClinic example, along with the [AltWalker](https://altom.gitlab.io/altwalker/altwalker/index.html) team that inspired myself and also parts of this code.
+Credits go to GraphWalker team and the team behind the PetClinic example, along with the [AltWalker](https://altom.gitlab.io/altwalker/altwalker/index.html) team that inspired myself and also parts of this code. I would recommend having a look at some [examples provided by AltWalker](https://altom.gitlab.io/altwalker/altwalker/examples.html).
 
 ## Contact
 
