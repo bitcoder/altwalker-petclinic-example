@@ -1,3 +1,8 @@
+""" This is a custom JUnit XML reporter for AltWalker implemented using the built-in PrintReporter as basis.
+    It provides the ability to either generate a JUnit XML report containing a testcase element per each model
+    or a single testcase that abstracts the whole execution, no matter how many models have been exercised.
+"""
+
 from altwalker.reporter import Reporter
 from junit_xml import TestSuite, TestCase
 

@@ -35,10 +35,18 @@ Just run run.sh :) in (Lin)unix...
 
 or
 
-```
+```bash
 altwalker check -m models/petclinic_full.json "random(vertex_coverage(100))"
 altwalker verify -m models/petclinic_full.json tests
 altwalker online tests -m models/petclinic_full.json "random(vertex_coverage(100))"
+```
+
+If you want to run this in a CI/CD pipeline or even integrate it with a test management tool (e.g. [Xray](https://getxray.app)), you can generate a Junit XML report. Since AltWalker, as of v0.2.7, does not provide the ability to generate JUnit XML reports by itself, we need to implement our own report. Besides, we need to invoke AltWalker programmatically so we can pass our custom reporter object.
+Please check [custom_junit_reporter.py](custom_junit_reporter.py) and [run_with_custom_junit_report.py](run_with_custom_junit_report.py) for more details.
+To
+
+```bash
+./run_with_custom_junit_report.py
 ```
 
 ## About the porting
